@@ -1,5 +1,11 @@
 # Vulkan Game
 
+## Prerequisites
+- Vulkan SDK (not-included)  
+  https://www.lunarg.com/vulkan-sdk/
+- GLFW (included)
+- GLM (included)
+
 ## Building
 1. Start > Run... > "x64 Native Tools Command Prompt for VS 2019"
 2. `cd "C:\Users\mikes\Desktop\VulkanGame"`
