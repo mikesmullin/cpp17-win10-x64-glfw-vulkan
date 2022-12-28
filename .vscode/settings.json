@@ -1,5 +1,14 @@
 {
   "files.associations": {
     "ostream": "cpp"
-  }
+  },
+  "cSpell.words": [
+    "GLFW",
+    "Vulkan"
+  ],
+  "C_Cpp.default.includePath": [
+    "C:/VulkanSDK/1.3.236.0/Include",
+    "vendor/glfw-3.3.8/include",
+    "vendor/glm-0.9.9.8"
+  ]
 }
