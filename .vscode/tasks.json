@@ -8,11 +8,14 @@
         "/Zi",
         "/EHsc",
         "/nologo",
-        "/Fe${fileDirname}\\build\\game.exe",
-        "..\\*.cpp"
+        "/I", "../vendor/glfw-3.3.8/include",
+        "..\\*.cpp",
+        "/Fe${fileDirname}/build/game.exe",
+        "/link", "user32.lib","shell32.lib","gdi32.lib",
+        "/LIBPATH:../vendor/glfw-3.3.8/lib-vc20109 glfw3.lib"
       ],
       "options": {
-        "cwd": "${fileDirname}\\build\\"
+        "cwd": "${fileDirname}/build/"
       },
       "problemMatcher": [
         "$msCompile"
