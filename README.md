@@ -15,6 +15,13 @@
    C:\...\> nmake
    ```
 
+## Collaborate
+
+- Discord: Vulkan Game Engine Dev  
+  https://discord.gg/2XuShqjC
+- Discord: Global Game Jam (Jan 30th - Feb 5th, 2023)  
+  https://discord.gg/ggj
+
 ## Credits
 
 This project was inspired by following along with the following materials:
