@@ -24,7 +24,7 @@
 
 ## Credits
 
-This project was inspired by following along with the following materials:
+This project was inspired by the following materials:
 
 - Vulkan (C++) Game Engine Tutorial  
   https://www.youtube.com/watch?v=Y9U9IE0gVHA&list=PL8327DO66nu9qYVKLDmdLW_84-yE4auCR
