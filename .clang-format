@@ -4,4 +4,6 @@
 	AlignAfterOpenBracket: AlwaysBreak,
 	AllowAllArgumentsOnNextLine: false,
 	BinPackParameters: false,
-	BinPackArguments: false }
+	BinPackArguments: false,
+	DerivePointerAlignment: false,
+	PointerAlignment: Left }
