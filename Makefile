@@ -1,10 +1,10 @@
-.PHONY: clean shaders cpp run
+.PHONY: clean shader cpp run
 
-all: clean shaders cpp
+all: clean shader cpp
 
-shaders:
-	cd build/ && C:\VulkanSDK\1.3.236.0\Bin\glslc.exe ../resources/shaders/simple_shader.vert -o ../resources/shaders/simple_shader.vert.spv
-	cd build/ && C:\VulkanSDK\1.3.236.0\Bin\glslc.exe ../resources/shaders/simple_shader.frag -o ../resources/shaders/simple_shader.frag.spv
+shader:
+	cd build/ && C:\VulkanSDK\1.3.236.0\Bin\glslc.exe ../shaders/simple_shader.vert -o ../shaders/simple_shader.vert.spv
+	cd build/ && C:\VulkanSDK\1.3.236.0\Bin\glslc.exe ../shaders/simple_shader.frag -o ../shaders/simple_shader.frag.spv
 
 cpp:
 	cd build/ && \
@@ -16,7 +16,8 @@ cpp:
     /I C:/VulkanSDK/1.3.236.0/Include \
     /I ../vendor/glfw-3.3.8/include \
     /I ../vendor/glm-0.9.9.8 \
-    ../*.cpp \
+    /I ../external/tinyobjloader \
+    ../src/*.cpp \
     /Fegame.exe \
     /link user32.lib shell32.lib gdi32.lib \
     /NODEFAULTLIB:MSVCRT \
@@ -24,9 +25,9 @@ cpp:
     /LIBPATH:C:/VulkanSDK/1.3.236.0/Lib vulkan-1.lib
 
 run:
-  build\\game.exe
+  cd build && game.exe
 
 clean:
 	del /f /s /q build\\*
-	del /f /s /q resources\\shaders\\*.spv
+	del /f /s /q shaders\\*.spv
 
